@@ -189,11 +189,11 @@
 
         /* About Section */
         .about-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5rem;
-            align-items: flex-start;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
         .about-content h2 {
             font-size: 3rem;
@@ -386,11 +386,11 @@
 
         /* Contact Section */
         .contact-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5rem;
-            align-items: center;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
         .contact-content h2 {
             font-size: 2.8rem;
@@ -399,11 +399,18 @@
             font-weight: 900;
         }
 
+        .contact-content {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
         .social-links {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
 
         .social-link {
             display: flex;
@@ -712,8 +719,6 @@
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
         <div class="container">
-            <div class="contact-section"
-                style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
                 <div class="contact-content">
                     <h2>CONTACT ME</h2>
                     <div class="social-links">
